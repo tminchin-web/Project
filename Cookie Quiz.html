@@ -13,12 +13,31 @@
 </table>
 <style>
     @media screen and (max-width: 790px){
-        *{
-            margin-right:50%;
+        input[type="radio"], input[type="checkbox"]{
+            width:25px;
+            height:25px;
+            transform:translate(-660%);
+            margin-right:-160px;
+            margin-top:10px;
+            
+        
+            
         }
+        h1{
+            transform:translate(-50px);
+        }
+        p{
+            transform:translate(-155px);
+        }
+        input[type="text"], input[type="submit"], button not th button{
+            height:30px;
+            transform:translate(-150px);
+        }
+        
     }
 </style>
-<h1 style="margin-top:opx;"">Cookie Quiz</h1>
+<div style="margin-left:40%; margin-top:5%">
+<h1 style="margin-top:0px;">Cookie Quiz</h1>
 
 <p> Question 1- Where were Cookies first thought of? </p>
 <input type="radio" name="question 1" id ="wrong">Britian<br>
@@ -58,6 +77,7 @@
 <input type="submit" name="submit" value="submit" onClick ="QuizResults()">
 <button onclick="document.location='Cookie Quiz.html'">Reset</button>
 <button onclick="document.location='Cookie Menu Page.html'">Menu</button>
+</div>
 <script>
 function QuizResults(){
 
