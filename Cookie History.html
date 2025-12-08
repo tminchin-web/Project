@@ -185,6 +185,7 @@ transform:translate(50%, -50%);
   }
   img{
     display:none;
+  
 }
 }
 
@@ -207,6 +208,59 @@ transform:translate(50%, -50%);
   h1{
     text-align:center;
     margin-left: 90px;
+  }
+  
+
+  .container ul li{
+    width: 100%;
+    float: none;
+    clear: none;
+    
+  }
+
+
+  .container ul li:nth-child(odd){
+
+    transform:translateX(0);
+    text-align: left;
+  }
+
+  .container ul li:nth-child(odd) .date{
+    left: auto;
+  }
+  .container ul li:nth-child(even) .date{
+    right: auto;
+  }
+  .container ul li:nth-child(odd) .circle{
+    display:none;
+  }
+  .container ul li:nth-child(even) .circle{
+    display:none;
+  }
+
+  .container ul li:nth-child(even){
+    transform:translateX(60px);
+}
+}
+@media (max-width: 480px){
+  .container{
+    width:80%;
+    transform:translatex(20px);
+    margin:center;
+    
+  }
+  .container ul ::after{
+    left:-30px;
+  }
+    .container::after{
+    display:none;
+  }
+   img {
+    
+    display:none;
+  }
+  h1{
+    text-align:center;
   }
   
 
@@ -329,6 +383,6 @@ transform:translate(50%, -50%);
 
     </div>
 </div>
-<button onclick="document.location='Cookie Quiz.html'" style="margin-left:40%;height:250px;width:350px;background-color:rgb(255, 87, 20) ;">Take the Quiz</button>
+<button onclick="document.location='Cookie Quiz.html'" style="margin-left:40%;height:250px;width:350px;background-color:rgb(255, 87, 20) ;" id="quiz button">Take the Quiz</button>
 </body>
 </html>
