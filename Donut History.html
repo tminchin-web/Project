@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Dessert History </title>
+</head>
+<body style="background-color:rgb(219, 194, 48);">
+<style>
+
+
+
+.menuleft {
+    padding: 190px;
+    margin-left:150px
+    
+    
+    
+}
+.menuright {
+    width: 40%;
+    float: left;
+    padding: 20px;
+    border: 2px solid black;
+}  
+
+
+.main{
+  width: 100%;  
+  height: auto;
+  padding: 50px 0;
+  place-items: center;
+  display: grid;
+
+}
+
+.main .heading{
+  font-size: 27px;
+  margin-right:5%;
+  font-weight: 550;
+  color:rgb(129, 108, 11);
+  position: relative;
+  margin-bottom: 80px;
+
+}
+
+
+  .heading::after{
+
+  position: absolute;
+  content: '';    
+  width:50%;
+  height: 3px;
+  left: 50%;
+  bottom: -5px;
+  background-image: linear-gradient(to right, rgb(15, 15, 12), rgb(129, 108, 11), white);
+  transform: translateX(-50%);
+}
+
+
+
+.container{
+  width: 60%;
+  height: auto;
+  position: relative;
+
+}
+
+
+.container ul{
+  list-style: none;
+}
+
+.container ul li{
+  width: 40%;
+  height: auto;
+  padding: 15px 30px;
+  background-color: rgb(255, 87, 20);
+  box-shadow: 1px 1px 20px rgb(199, 199, 197);
+  border-radius: 5px;
+  margin-bottom: 70px;
+}
+.container::after{
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 100%;
+  background-image:linear-gradient(to bottom, rgb(15, 15, 12), rgb(129, 108, 11), white);
+  margin-left:50px;
+}
+
+.container ul li:nth-child(even){
+ float: right;
+ margin-right: 65px;
+ clear: left;
+ transform: translateX(5px);
+
+}
+
+.container ul li:nth-child(odd){
+ float: left;
+ margin-left: -65px;
+ clear: right;
+ text-align: right;
+ transform: translateX(-5px);
+}
+
+
+.container ul li .title{
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(15, 15, 12);
+  margin-bottom: 10px;
+
+}
+
+ul li p{
+  font-size: 18px;
+  color: rgb(211, 201, 201);
+  margin: 5px 0;
+  line-height: 25px;
+}
+
+ul li .date{
+  position:absolute;
+  background-image:linear-gradient(to bottom, white ,rgb(129, 108, 11));
+  border-radius: 15px;
+  place-items: center;
+  display: grid;
+  top: -20px;
+  left: 390px;
+  width: 100px;
+  height: 20px;
+  font-size: 16px;
+ 
+}
+
+.container ul li .circle{
+  width: 30px;
+  height: 30px;
+  background-color:rgb(211, 201, 201) ;
+  border-radius: 50%;
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+
+
+.container ul li .circle::after{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: rgb(129, 108, 11);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+
+
+.container ul li:nth-child(even) .circle{
+left: -77px;
+
+transform:translate(50%, -50%);
+
+}
+
+.container ul li:nth-child(odd) .circle{
+left:514px;
+transform:translate(50%, -50%);
+
+}
+
+.container ul li:nth-child(even) .date{
+  left: auto;
+  right: 390px;
+
+}
+@media screen and (max-width: 799px) {
+   .container{
+    width:95%;
+    transform:translatex(50px);
+    margin:center;
+    
+  }
+  .container ul ::after{
+    left:-30px;
+  }
+    .container::after{
+    display:none;
+  }
+   img {
+    
+    display:none;
+  }
+  h1{
+    text-align:center;
+  }
+  
+
+  .container ul li{
+    width: 100%;
+    float: none;
+    clear: none;
+  }
+  th{
+     transform:translatex(50px);
+  }
+  .heading::after{
+    margin-right:30%;
+  }
+
+
+  .container ul li:nth-child(odd){
+
+    transform:translateX(0);
+    text-align: left;
+  }
+
+  .container ul li:nth-child(odd) .date{
+    left: auto;
+  }
+  .container ul li:nth-child(even) .date{
+    right: auto;
+  }
+  .container ul li:nth-child(odd) .circle{
+    display:none;
+  }
+  .container ul li:nth-child(even) .circle{
+    display:none;
+  }
+
+  .container ul li:nth-child(even){
+    transform:translateX(60px);
+}
+}
+
+@media (max-width: 1699px) and (min-width: 800px){
+  .container{
+    width:100%;
+    transform:translatex(20px);
+    
+  }
+  .container ul ::after{
+    left:-30px;
+  }
+    .container::after{
+    display:none;
+  }
+   img {
+    height:100px;
+    width:100px;
+    transform:translatex(-80%);
+
+  }
+ h1{
+ transform:translatex(-80%);
+ }
+
+  .container ul li{
+    width: 100%;
+    float: none;
+    clear: none;
+    
+  }
+
+
+  .container ul li:nth-child(odd){
+
+    transform:translateX(0);
+    text-align: left;
+  }
+
+  .container ul li:nth-child(odd) .date{
+    left: auto;
+  }
+  .container ul li:nth-child(even) .date{
+    right: auto;
+  }
+  .container ul li:nth-child(odd) .circle{
+    display:none;
+  }
+  .container ul li:nth-child(even) .circle{
+    display:none;
+  }
+
+  .container ul li:nth-child(even){
+    transform:translateX(60px);
+}
+}
+
+ 
+</style>
+
+<table style=width:100%;text-align:center;font-size:20px>
+  <tr>
+  
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Homepage.html'" style=background-color:transparent>HOME</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Donut Menu Page.html'" style=background-color:transparent>MENU</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Sources.html'" style=background-color:transparent>SOURCES</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Quiz Screen.html'" style=background-color:transparent>Quizzes</button></th>
+
+  </tr>
+
+</tr>
+
+
+</table>
+<table style=width:100%;text-align:center;font-size:20px>
+  <tr>
+    <th style=border-style:solid;border-width:2px;border-color:black>HOME </a></th>
+    <th style=border-style:solid;border-width:2px;border-color:black> MENU </th> 
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Sources.html'" style=background-color:transparent>SOURCES</button></th>
+
+  </tr>
+
+
+</table>
+
+
+<div class="main">
+  <h2 class="heading">The History of Donuts</h2>
+    <div class ="container">
+      <ul>
+        <li>
+          <h2 class="title"> Orgins</h2>
+          <p>The doughnuts originated from ancient Egyptions frying dough to make snacks similar to cakes. These were fed to Pharaohs and the wealthy.</p>
+          <span class="circle"></span>
+          <span class="date">6000 years ago</span>
+
+        </li>
+        <li>
+          <h2 class="title"> Sweet doughnuts</h2>
+          <p> Honey gets added to doughnuts in Greece and Rome. These became Olympic prizes in Greece, and in Rome it became a very popular festival treat.</p>
+          <p>Cato the Elder had a recipe for these honey cakes in his cookbook"De Agri Cultura".That recipe is considered to be the precursor of dounuts</p>
+          <span class="circle"></span>
+          <span class="date">Byzantine times</span>
+
+        </li>
+         <li>
+          <h2 class="title"> Jelly doughnuts</h2>
+          <p> Jelly dounts come from Germany and was written in a German cookbook called "Kuchenmeisterei", where they were called gefüllte Krapfen.</p>
+          <p>These are very similar to modern day jelly donuts aside from being deep fried in lard and being filled with meat or mushrooms.</p>
+          <span class="circle"></span>
+          <span class="date">1500s</span>
+
+        </li>
+        <li>
+          <h2 class="title"> North America</h2>
+          <p>The dutch end up bringing donuts,or what they called olykoeks, to North America.</p>
+          <p>These are bassically the modern day donutholes,aside from also being filled with nuts and dried fruits.</p>
+          <p>There is also a myth that the nuts filling these donut holes is how donut became the english name, others think it is the shape.</p>
+          <span class="circle"></span>
+          <span class="date">1700s</span>
+
+        </li>
+        <li>
+          <h2 class="title">Modern donut shape</h2>
+          <p>Hanson Gregory, a ship captain, is credited with inventing the modern donut shape by punching a hole in the center of the dough to ensure even cooking.</p>
+          <p>This cooking technique spread and by 1877, cookbooks had this technique.</p>
+          <span class="circle"></span>
+          <span class="date">1847/1877</span>
+
+        </li>
+        <li>
+          <h2 class="title"> WWI</h2>
+          <p>Donuts were sent to France by woman as a treat for the solders. These people would be nicknamed Doughnut Girls/Donut Lassies and doughboy solders.</p>
+          <p>This did a good job of spreading donuts popularity outside the US, and kept solders wanting more when they returned.</p>
+          <p>This is how National Donut Day came to be to honor the work of the Donut Lassies, which is June 7th.</p>
+
+          <span class="circle"></span>
+          <span class="date">1914-1918</span>
+
+        </li>
+
+        <li>
+          <h2 class="title"> Donut Machine</h2>
+          <p>The invention of the automated donut machine by a Russian named Adolph Levitt in 1920 revolutionized donut production, making it faster and more efficient.</p>
+          <p>This idea would spread thoughout New York and would become a speticle to watch the machine.</p>
+          <p>This machine would get donuts called the food hit of the centry at the 1934 World Fair in Chicago</p>
+          <span class="circle"></span>
+          <span class="date">1920</span>
+
+        </li>
+        <li>
+          <h2 class="title"> Krispy Kreme</h2>
+          <p>Krispy Kreme's orgin comes from a Frenchman named Joe Lebeau, who had secret recipe that was given to Ishmael Armstrong.</p>
+          <p>He then hired Vernon Rudolph to sell these Krispy Kream treats.</p>
+          <p>In 1937,Vernon would then combined potatoes,sugar, and milk with the treats, and the Krispy Kreme donut was born.</p>
+          <span class="circle"></span>
+          <span class="date">1937</span>
+
+        </li>
+        <li>
+          <h2 class="title"> WWII</h2>
+          <p>During WWII,donuts were again sent to solders as a treat by the Salvation Army and Red Cross, continuing the tradition from WWI.</p>
+          <span class="circle"></span>
+          <span class="date">1938-1945</span>
+
+        </li>
+        <li>
+          <h2 class="title"> Dunkin'Donuts</h2>
+          <p>Dunkin Donuts(originally known as Open Kettle),was a small shop in Quincy, Massachusetts,founded by William Rosenberg.</p>
+          <p>In 1950,he renamed the shop to Dunkin'Donuts,emphasizing the dunking of donuts in coffee, donuts sold for 5 cent, 10 cents for coffee. </p>
+          <p>10 years later, it expanded to 100+ locations in the US and in 1973, Munchkins were born.</p>
+          <span class="circle"></span>
+          <span class="date">1948</span>
+
+        </li>
+        
+
+
+
+
+
+      </ul>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Dessert History </title>
+</head>
+<body style="background-color:rgb(219, 194, 48);">
+<style>
+
+
+
+.menuleft {
+    padding: 190px;
+    margin-left:150px
+    
+    
+    
+}
+.menuright {
+    width: 40%;
+    float: left;
+    padding: 20px;
+    border: 2px solid black;
+}  
+
+
+.main{
+  width: 100%;  
+  height: auto;
+  padding: 50px 0;
+  place-items: center;
+  display: grid;
+
+}
+
+.main .heading{
+  font-size: 27px;
+  margin-right:5%;
+  font-weight: 550;
+  color:rgb(129, 108, 11);
+  position: relative;
+  margin-bottom: 80px;
+
+}
+
+
+  .heading::after{
+
+  position: absolute;
+  content: '';    
+  width:50%;
+  height: 3px;
+  left: 50%;
+  bottom: -5px;
+  background-image: linear-gradient(to right, rgb(15, 15, 12), rgb(129, 108, 11), white);
+  transform: translateX(-50%);
+}
+
+
+
+.container{
+  width: 60%;
+  height: auto;
+  position: relative;
+
+}
+
+
+.container ul{
+  list-style: none;
+}
+
+.container ul li{
+  width: 40%;
+  height: auto;
+  padding: 15px 30px;
+  background-color: rgb(188, 83, 248);
+  box-shadow: 1px 1px 20px rgb(199, 199, 197);
+  border-radius: 5px;
+  margin-bottom: 70px;
+}
+.container::after{
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 100%;
+  background-image:linear-gradient(to bottom, rgb(15, 15, 12), rgb(129, 108, 11), white);
+  margin-left:50px;
+}
+
+.container ul li:nth-child(even){
+ float: right;
+ margin-right: 65px;
+ clear: left;
+ transform: translateX(5px);
+
+}
+
+.container ul li:nth-child(odd){
+ float: left;
+ margin-left: -65px;
+ clear: right;
+ text-align: right;
+ transform: translateX(-5px);
+}
+
+
+.container ul li .title{
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(15, 15, 12);
+  margin-bottom: 10px;
+
+}
+
+ul li p{
+  font-size: 18px;
+  color: rgb(211, 201, 201);
+  margin: 5px 0;
+  line-height: 25px;
+}
+
+ul li .date{
+  position:absolute;
+  background-image:linear-gradient(to bottom, white ,rgb(129, 108, 11));
+  border-radius: 15px;
+  place-items: center;
+  display: grid;
+  top: -20px;
+  left: 390px;
+  width: 100px;
+  height: 20px;
+  font-size: 16px;
+ 
+}
+
+.container ul li .circle{
+  width: 30px;
+  height: 30px;
+  background-color:rgb(65, 59, 37);
+  border-radius: 50%;
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+
+
+.container ul li .circle::after{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: rgb(129, 108, 11);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+
+
+.container ul li:nth-child(even) .circle{
+left: -77px;
+
+transform:translate(50%, -50%);
+
+}
+
+.container ul li:nth-child(odd) .circle{
+left:514px;
+transform:translate(50%, -50%);
+
+}
+
+.container ul li:nth-child(even) .date{
+  left: auto;
+  right: 390px;
+
+}
+@media screen and (max-width: 799px) {
+   .container{
+    width:95%;
+    transform:translatex(50px);
+    margin:center;
+    
+  }
+  .container ul ::after{
+    left:-30px;
+  }
+    .container::after{
+    display:none;
+  }
+   img {
+    
+    display:none;
+  }
+  h1{
+    text-align:center;
+  }
+  
+
+  .container ul li{
+    width: 100%;
+    float: none;
+    clear: none;
+  }
+  th{
+     transform:translatex(50px);
+  }
+  .heading::after{
+    margin-right:30%;
+  }
+
+
+  .container ul li:nth-child(odd){
+
+    transform:translateX(0);
+    text-align: left;
+  }
+
+  .container ul li:nth-child(odd) .date{
+    left: auto;
+  }
+  .container ul li:nth-child(even) .date{
+    right: auto;
+  }
+  .container ul li:nth-child(odd) .circle{
+    display:none;
+  }
+  .container ul li:nth-child(even) .circle{
+    display:none;
+  }
+
+  .container ul li:nth-child(even){
+    transform:translateX(60px);
+}
+}
+
+@media (max-width: 1699px) and (min-width: 800px){
+  .container{
+    width:100%;
+    transform:translatex(20px);
+    
+  }
+  .container ul ::after{
+    left:-30px;
+  }
+    .container::after{
+    display:none;
+  }
+   img {
+    height:100px;
+    width:100px;
+    transform:translatex(-80%);
+
+  }
+ h1{
+ transform:translatex(-80%);
+ }
+
+  .container ul li{
+    width: 100%;
+    float: none;
+    clear: none;
+    
+  }
+
+
+  .container ul li:nth-child(odd){
+
+    transform:translateX(0);
+    text-align: left;
+  }
+
+  .container ul li:nth-child(odd) .date{
+    left: auto;
+  }
+  .container ul li:nth-child(even) .date{
+    right: auto;
+  }
+  .container ul li:nth-child(odd) .circle{
+    display:none;
+  }
+  .container ul li:nth-child(even) .circle{
+    display:none;
+  }
+
+  .container ul li:nth-child(even){
+    transform:translateX(60px);
+}
+}
+
+ 
+</style>
+
+<table style=margin-left:30%>
+  <tr>
+<th><img src= "https://static.vecteezy.com/system/resources/previews/034/413/224/non_2x/donut-isolated-on-transparent-background-png.png" style=width:200px;height:200px></th>
+<th><h1> ICE CREAM HISTORY</th></h1>
+<th><img src= "https://static.vecteezy.com/system/resources/previews/034/413/224/non_2x/donut-isolated-on-transparent-background-png.png" style=width:200px;height:200px></th>
+
+</tr>
+
+
+<table style=width:100%;text-align:center;font-size:20px>
+  <tr>
+  
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Index.html'" style=background-color:transparent>HOME</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Cookie Menu Page.html'" style=background-color:transparent>MENU</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Sources.html'" style=background-color:transparent>SOURCES</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Quiz Screen.html'" style=background-color:transparent>Quizzes</button></th>
+
+  </tr>
+</table>
+
+<div class="main">
+  <h2 class="heading">The History of Ice Cream</h2>
+    <div class ="container">
+      <ul>
+        <li>
+          <h2 class="title"> Earliest Sighting</h2>
+          <p> The true orgins of ice cream are known. Ice Cream back then were called just Ices and was bassically flavored ice. The Chinese were able to store Ices in iceboxes during the summer. </p>
+          <span class="circle"></span>
+          <span class="date">1100</span>
+
+        </li>
+        <li>
+          <h2 class="title"> Rome </h2>
+          <p> Alexander the Great had eaten ices during the siege of Petra, digging into trenches to eat them. Not even war can stop the love from ices. </p>
+          <p>Emperor Nero Claudius Caesar also sent people to the moutains to get ice and snow for cooling purposes.</p>
+          <span class="circle"></span>
+          <span class="date">356/54A.D</span>
+
+        </li>
+        <li>
+          <h2 class="title"> Florence</h2>
+          <p> Ice houses were used to sell ice and snow</p>
+          <span class="circle"></span>
+          <span class="date">1580s</span>
+
+        </li>
+         <li>
+          <h2 class="title"> Sorbert</h2>
+          <p> Antonio Latini creates sorbert, being credited for making the first acutal ice cream. </p>
+          <span class="circle"></span>
+          <span class="date">1694</span>
+
+        </li>
+         <li>
+          <h2 class="title"> USA</h2>
+          <p>Ice cream makes it to America and was served in Maryland by thier first lady.</p>
+          <span class="circle"></span>
+          <span class="date">1744</span>
+         </li>
+          <li>
+          <h2 class="title"> French Cookbook</h2>
+          <p>The Art of Making Frozen Desserts by M Emy, is the first dedicated cookbook for frozen desserts</p>
+          <span class="circle"></span>
+          <span class="date">1768</span>
+         </li>
+    
+           <li>
+          <h2 class="title"> Government</h2>
+          <p> The first gelateria in the US was established in New York in 1770 by Giovanni Bosio, an Italian immigrant</p>
+          <p>The USA goverment had thier fair share of ice cream. Geroge Washington had ice cream constantly in office and had some during a party in 1782 to honor the birth of the Dauphin of France. He was served ice cream by Betsy Hamilton in 1789 and spent about 200$ on ice cream in 1790.</p>
+          <p>Thomas Jeffrenson had a cream machine and had gotten some recipes from a french chief</p>
+          <p>Autheleme Brittat Savarin, who was a french politician had sold ices in New york in 1794 and 1795</p>
+          <p> Insulated ice houses are invented in 1800, making ice cream much easier to produce</p>
+          <p>Thomas Jefferson also had a dish similar to baked alaska in 1802 served at a state banquet in the white house</p>
+          <p>Mrs Jeremiah Shadd, a freed slave, had her ice cream recipe served by Dolly Madison for James Madison's second Inauguration Ball in 1813. She also had a catering business that included this recipe.</p>
+          <span class="circle"></span>
+          <span class="date">1770s-1810s</span>
+         </li>
+          <li>
+          <h2 class="title"> Ice Cream spreads</h2>
+          <p> Ice cream began to get sold in London by street vendor Carlo Gatti, and in Canada by Thomas Webb street vendors as well.</p>
+          <span class="circle"></span>
+          <span class="date">1850</span>
+         </li>
+          <li>
+          <h2 class="title"> Ice Cream Advancements</h2>
+          <p>The ice cream cone exclusive for ice cream was made by Italian immigrants in England</p>
+          <span class="circle"></span>
+          <span class="date">1851</span>
+         </li>
+
+        
+
+      </ul>
+
+    </div>
+</div>
+
+</body>
+</html>

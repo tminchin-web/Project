@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:rgb(78, 73, 45);">
+<table style=width:100%;text-align:center;font-size:20px>
+  <tr>
+  
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='index.html'" style=background-color:transparent>HOME</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Cookie Menu Page.html'" style=background-color:transparent>MENU</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Sources.html'" style=background-color:transparent>SOURCES</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Quiz Screen.html'" style=background-color:transparent>Quizzes</button></th>
+
+  </tr>
+</table>
+<style>
+@media screen and (max-width: 790px){
+        input[type="radio"], input[type="checkbox"]{
+            width:25px;
+            height:25px;
+            transform:translate(-660%);
+            margin-right:-160px;
+            margin-top:10px;
+            
+        
+            
+        }
+        h1{
+            transform:translate(-50px);
+        }
+        p{
+            transform:translate(-155px);
+        }
+        input[type="text"], input[type="submit"], button not th button{
+            height:30px;
+            transform:translate(-150px);
+        }
+        
+    }
+    </style>
+<div style="margin-left:40%; margin-top:5%; font-size:24px;">    
+<h1 style="margin-top:0px;">Donut Quiz</h1>
+
+<p> Question 1- Where were Cookies first thought of? </p>
+<input type="radio" name="question 1" id ="wrong">Britian<br>
+<input type="radio" name="question 1" id="correct"> Persia<br>
+<input type="radio" name="question 1" id ="wrong"> USA<br>
+<input type="radio" name="question 1" id ="wrong"> Rome<br>
+<p id ="feedback"></p>
+
+<p> Question 2- Who made the first American published cook book? </p>
+<input type="radio" name="question 2"> Thomas Dawson<br>
+<input type="radio" name="question 2" > Nabisco <br>
+<input type="radio" name="question 2" > Ruth Graves Wakefield <br>
+<input type="radio" name="question 2" id ="correct 2"> Amelia Simmons<br>
+<p id="feedback2"></p>
+<p> Question 3 - Who made the first sandwich cookies </p>
+<input type="radio" name="question 3" id ="correct 3">Britian<br>
+<input type="radio" name="question 3" > Persia<br>
+<input type="radio" name="question 3" > USA<br>
+<input type="radio" name="question 3"> Rome<br>
+<p id="feedback3"></p>
+
+<p> Question 4 - Which 2 countries named the Anzac Biscuit </p>
+<input type="checkbox" name="question 4" id="wrong"> New Wales<br>
+<input type="checkbox" name="question 4" id ="correct 4"> New Zealand<br>
+<input type="checkbox" name="question 4" id="wrong"> Scotland <br>
+<input type="checkbox" name="question 4" id ="correct 5"> Australia<br>
+<input type="checkbox" name="question 4" id="wrong"> America<br>
+<p id="feedback4"></p>
+<p id="feedback5"></p>
+
+
+<p>Question 5- What was the name of the cookery that Gervase Markham made?</p>
+<input type="text" name="question 5" id="correct 6">
+<p id="feedback6"></p>
+</span>
+
+<input type="submit" name="submit" value="submit" onClick ="QuizResults()">
+<button onclick="document.location='Donut Quiz.html'">Reset</button>
+<button onclick="document.location='Donut Menu Page.html'">Menu</button>
+</div>
+<script>
+function QuizResults(){
+
+    var score=0
+    const userAnswer=document.getElementById("correct 6").value
+    const correctAnswer="The English Hus-wife";
+    if(document.getElementById('correct').checked)
+{
+    score++;
+    document.getElementById("feedback").innerHTML="Correct";
+    feedback.style.color="green";  
+} else{
+    document.getElementById("feedback").innerHTML="Wrong";
+    feedback.style.color="red";
+}
+
+ if(document.getElementById('correct 2').checked)
+{
+    score++;
+    document.getElementById("feedback2").innerHTML="Correct";
+    feedback2.style.color="green";  
+}else{
+    document.getElementById("feedback2").innerHTML="Wrong";
+    feedback2.style.color="red";
+}
+ if(document.getElementById('correct 3').checked)
+{
+    score++;
+    document.getElementById("feedback3").innerHTML="Correct";
+    feedback3.style.color="green";  
+}else{
+    document.getElementById("feedback3").innerHTML="Wrong";
+    feedback3.style.color="red";
+}
+
+if(document.getElementById('correct 4').checked)
+{
+    score++;
+    document.getElementById("feedback4").innerHTML="Correct";
+    feedback4.style.color="green";  
+}else{
+    document.getElementById("feedback4").innerHTML="Wrong";
+    feedback4.style.color="red";
+}
+if(document.getElementById('correct 5').checked)
+{
+    score++;
+    document.getElementById("feedback5").innerHTML="Correct";
+    feedback5.style.color="green";  
+}else{
+    document.getElementById("feedback5").innerHTML="Wrong";
+    feedback5.style.color="red";
+}
+if (userAnswer === correctAnswer) {
+            score++;
+            document.getElementById("feedback6").innerHTML="Correct"
+            feedback6.style.color="green"
+            
+        } else {
+            document.getElementById("feedback6").innerHTML="Wrong"
+            feedback6.style.color="red"
+        }
+        alert("you got "+ score +" out of 6| "+"Answers|1: Persia|2: Amelia Simmons|3:Britian|4 and 5: New Zealand and Australia|6: The English Hus-wife ")
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
