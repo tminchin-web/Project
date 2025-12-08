@@ -179,6 +179,59 @@ transform:translate(50%, -50%);
 
 }
 
+@media screen and (max-width: 700px) {
+   .container{
+    width:80%;
+    transform:translatex(20px);
+    margin:center;
+    
+  }
+  .container ul ::after{
+    left:-30px;
+  }
+    .container::after{
+    display:none;
+  }
+   img {
+    
+    display:none;
+  }
+  h1{
+    text-align:center;
+  }
+  
+
+  .container ul li{
+    width: 100%;
+    float: none;
+    clear: none;
+    
+  }
+
+
+  .container ul li:nth-child(odd){
+
+    transform:translateX(0);
+    text-align: left;
+  }
+
+  .container ul li:nth-child(odd) .date{
+    left: auto;
+  }
+  .container ul li:nth-child(even) .date{
+    right: auto;
+  }
+  .container ul li:nth-child(odd) .circle{
+    display:none;
+  }
+  .container ul li:nth-child(even) .circle{
+    display:none;
+  }
+
+  .container ul li:nth-child(even){
+    transform:translateX(60px);
+}
+}
 
 @media (max-width: 1699px) and (min-width: 992px){
   .container{
@@ -232,59 +285,8 @@ transform:translate(50%, -50%);
     transform:translateX(60px);
 }
 }
-@media (max-width: 480px){
-  .container{
-    width:80%;
-    transform:translatex(20px);
-    margin:center;
-    
-  }
-  .container ul ::after{
-    left:-30px;
-  }
-    .container::after{
-    display:none;
-  }
-   img {
-    
-    display:none;
-  }
-  h1{
-    text-align:center;
-  }
-  
-
-  .container ul li{
-    width: 100%;
-    float: none;
-    clear: none;
-    
-  }
 
 
-  .container ul li:nth-child(odd){
-
-    transform:translateX(0);
-    text-align: left;
-  }
-
-  .container ul li:nth-child(odd) .date{
-    left: auto;
-  }
-  .container ul li:nth-child(even) .date{
-    right: auto;
-  }
-  .container ul li:nth-child(odd) .circle{
-    display:none;
-  }
-  .container ul li:nth-child(even) .circle{
-    display:none;
-  }
-
-  .container ul li:nth-child(even){
-    transform:translateX(60px);
-}
-}
 
 
 </style>
