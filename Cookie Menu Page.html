@@ -14,9 +14,9 @@ p {
 
 .menuleft {
     padding: 190px;
-    margin-left:150px
+    margin-left:150px;
     
-    
+
     
 }
 .menuright {
@@ -25,6 +25,25 @@ p {
     padding: 20px;
     border: 2px solid black;
 }  
+
+@media screen and (max-width: 700px) {
+  .menuleft {
+    padding: 20px;
+    margin-left:20px;
+  }
+  
+}
+
+@media (max-width: 1200px){
+  .menuright {
+    width: 80%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  img{
+    display:none
+  }
+}
 </style>
 
 
@@ -39,9 +58,10 @@ p {
 <table style=width:100%;text-align:center;font-size:20px>
   <tr>
   
-    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Homepage.html'" style=background-color:transparent>HOME</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='index.html'" style=background-color:transparent>HOME</button></th>
     <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Donut Menu Page.html'" style=background-color:transparent>MENU</button></th>
     <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Sources.html'" style=background-color:transparent>SOURCES</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Quiz Screen.html'" style=background-color:transparent>Quizzes</button></th>
 
   </tr>
 
@@ -52,24 +72,19 @@ p {
 <div class="menuleft">
   <div class="menuright"style=padding-bottom:70px;text-color:brown>
       <div><a href ="Ice Cream Menu Page.html">Previous</a>
-
-   <h1> Chocolate Chip Cookie Ingridents</h1>
-   <p>1 cup salted butter softened</p>
-   <p> cup granulated sugar</p>
-   <p>>1 cup light brown sugar packed</p>
-   <p>2 teaspoons pure vanilla extract</p>
-   <p>2 large eggs</p>
-   <p>3 cups all-purpose flour</p>
-   <p>1 teaspoon baking soda</p>
-   <p>1/2 teaspoon baking powder</p>
-   <p> teaspoon sea salt</p>
-   <p>2 cups chocolate chips (12 oz)</p>
-   <a href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies">Recipe Here</a>
+           
+   <h1> Cookie Recipes</h1>
+   
+   <a href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies"><image src="CC Cookie.png" style="width:300px;height:300px" title="Chocolate Chip Cookie"></image></a>
+   <a href="https://handletheheat.com/soft-chewy-sugar-cookies"><image src="Sugar Cookie.png" title="Sugar Cookie"></image></a>
+   <a href="https://www.modernhoney.com/the-best-snickerdoodle-cookie-recipe"><image src="Snickerdoodle Cookie.png" style="width:400px;height:400px" title="Snickerdoodle Cookie"></image></a>
   </div>
   </div>
   
-  <div class="menuright" style="padding-bottom:70px">
+  <div class="menuright" style="padding-bottom:90px">
+     <a href="Cookie History.html">History</a>
 <h1><div> Fun Facts about Cookies </h1>
+  
     <p>Cookie comes from a dutch word called koejie, meaning little cake</p>
     <hr>
     <p> The first chocolate chip cookie was made by accident in 1938 by Ruth Wakefield, who owned the Toll House Inn in Massachusetts</p>
@@ -79,7 +94,7 @@ p {
     <p> Oreos had copied Hydrox, both being made by the same company being Nabisco, Oreos happened to be much more popular</p>
     <hr>
     <p>There is many types of cookies, from stroopwaffles in the Netherlands, Macoroons/Macarons, not to mention the tons of flavors and toppings</p>
- 
+     <a href="Ice Cream Menu Page.html" style="text-align:right">Next Dessert</a>
 
 
 
