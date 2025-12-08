@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Dessert History </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+
+</head>
+<body style="background-color:rgb(219, 194, 48);">
+<style>
+
+
+
+.menuleft {
+    padding: 190px;
+    margin-left:150px
+    
+    
+    
+}
+.menuright {
+    width: 40%;
+    float: left;
+    padding: 20px;
+    border: 2px solid black;
+}  
+
+
+.main{
+  width: 100%;  
+  height: auto;
+  padding: 50px 0;
+  place-items: center;
+  display: grid;
+
+}
+
+.main .heading{
+  font-size: 27px;
+  margin-right:5%;
+  font-weight: 550;
+  color:rgb(129, 108, 11);
+  position: relative;
+  margin-bottom: 80px;
+
+}
+
+
+  .heading::after{
+
+  position: absolute;
+  content: '';    
+  width:50%;
+  height: 3px;
+  left: 50%;
+  bottom: -5px;
+  background-image: linear-gradient(to right, rgb(15, 15, 12), rgb(129, 108, 11), white);
+  transform: translateX(-50%);
+}
+
+
+
+.container{
+  width: 60%;
+  height: auto;
+  position: relative;
+
+}
+
+
+.container ul{
+  list-style: none;
+}
+
+.container ul li{
+  width: 40%;
+  height: auto;
+  padding: 15px 30px;
+  background-color: rgb(255, 87, 20);
+  box-shadow: 1px 1px 20px rgb(199, 199, 197);
+  border-radius: 5px;
+  margin-bottom: 70px;
+}
+.container::after{
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 100%;
+  background-image:linear-gradient(to bottom, rgb(15, 15, 12), rgb(129, 108, 11), white);
+  margin-left:50px;
+}
+
+.container ul li:nth-child(even){
+ float: right;
+ margin-right: 65px;
+ clear: left;
+ transform: translateX(5px);
+
+}
+
+.container ul li:nth-child(odd){
+ float: left;
+ margin-left: -65px;
+ clear: right;
+ text-align: right;
+ transform: translateX(-5px);
+}
+
+
+.container ul li .title{
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(15, 15, 12);
+  margin-bottom: 10px;
+
+}
+
+ul li p{
+  font-size: 18px;
+  color: rgb(211, 201, 201);
+  margin: 5px 0;
+  line-height: 25px;
+}
+
+ul li .date{
+  position:absolute;
+  background-image:linear-gradient(to bottom, white ,rgb(129, 108, 11));
+  border-radius: 15px;
+  place-items: center;
+  display: grid;
+  top: -20px;
+  left: 390px;
+  width: 100px;
+  height: 20px;
+  font-size: 16px;
+ 
+}
+
+.container ul li .circle{
+  width: 30px;
+  height: 30px;
+  background-color:rgb(211, 201, 201) ;
+  border-radius: 50%;
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+
+
+.container ul li .circle::after{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: rgb(129, 108, 11);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.container ul li:nth-child(even) .circle{
+left: -77px;
+
+transform:translate(50%, -50%);
+
+}
+
+.container ul li:nth-child(odd) .circle{
+left:514px;
+transform:translate(50%, -50%);
+
+}
+
+.container ul li:nth-child(even) .date{
+  left: auto;
+  right: 390px;
+
+}
+
+@media screen and (max-width: 1000px) {
+  .container{
+    width: 85%;
+  }
+  
+}
+
+@media (max-width: 1000px){
+  .container{
+    width:100%;
+    transform:translatex(20px);
+    
+  }
+  .container ul ::after{
+    left:-30px;
+  }
+
+  .container ul li{
+    width: 100%;
+    float: none;
+    clear: none;
+    
+  }
+
+
+  .container ul li:nth-child(odd){
+
+    transform:translateX(0);
+    text-align: left;
+  }
+
+  .container ul li:nth-child(odd) .date{
+    left: auto;
+  }
+  .container ul li:nth-child(even) .date{
+    right: auto;
+  }
+  .container ul li:nth-child(odd) .circle{
+    display:none;
+  }
+  .container ul li:nth-child(even) .circle{
+    display:none;
+  }
+
+  .container ul li:nth-child(even){
+    transform:translateX(60px);
+}
+}
+</style>
+
+<table style="margin-left:30%">
+  <tr>
+<th><img src="https://static.vecteezy.com/system/resources/previews/009/400/368/non_2x/homemade-tasty-cookies-clipart-design-illustration-free-png.png" style="width:180px;height:180px;margin-right:80px"></th>
+<th><h1 style="text-align:center">COOKIES</th></h1>
+<th><img src="https://static.vecteezy.com/system/resources/previews/009/400/368/non_2x/homemade-tasty-cookies-clipart-design-illustration-free-png.png" style="width:180px;height:180px;margin-left:80px"></th>
+</tr>
+</table>
+
+<table style=width:100%;text-align:center;font-size:20px>
+  <tr>
+    
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Index.html'" style=background-color:transparent>HOME</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Donut Menu Page.html'" style=background-color:transparent>MENU</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Sources.html'" style=background-color:transparent>SOURCES</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Quiz Screen.html'" style=background-color:transparent>Quizzes</button></th>
+
+  </tr>
+
+
+</table>
+
+
+<div class="main">
+  <h2 class="heading">The History of Cookies</h2>
+    <div class ="container">
+      <ul>
+        <li>
+          <h2 class="title"> Earliest Sighting</h2>
+          <p> Cookies were first thought of during this time in Persia, and were one of the first countries to cultivate sugar. Fun fact about this was that in 510 BC, solders from Emperor Darius found sugar but were not impressed, leaving it to be rediscovered by Alexander the Great who then popularised it in Persia and the Mediterranean.</p>
+          <span class="circle"></span>
+          <span class="date">700s</span>
+
+        </li>
+        <li>
+          <h2 class="title"> Renaissance </h2>
+          <p>  This was when cookie recipes began getting more complex by adding spices,nuts, and dried fruits to cookies. Cookies also began taking other forms such as French macarons, Italian biscotti, Dutch stroopwafels, and more.</p>
+          <span class="circle"></span>
+          <span class="date">1400-1700s</span>
+
+        </li>
+         <li>
+          <h2 class="title"> Cookbook Cookie variations</h2>
+          <p> Cookies were included in the cookbook called Goode Huswife's Jewel by Thomas Dawson, this was also for the middle class. These cookies were square instead of circlur.</p>
+          <p>Jumbles, a butter cookie, showed up in The English Hus-wife cookery by Gervase Markham in 1615. Jumbles have many varations to this day such as oatmeal,chocolate, crunchy texture and more.</p>
+          <p>1671 edition of The Closet of the Eminently Learned Sir Kenelme Digbie Kt(yes that is the name), small cakes were included as an smaller cookie sized version of a cake with icing. These are called cookies since cookie comes from the dutch word koekie, meanig little cake. Funny fact is that cupcakes are also considered small cakes but are not related to cookies</p>
+          <p>1796-American Cookery by Amelia Simmons, also had a cookie recipe and chirsmas varations of cookies like gingerbread. This was also the first cookbook authored by an American and published in the US</p>
+          <span class="circle"></span>
+          <span class="date">1596-1796</span>
+
+        </li>
+         <li>
+          <h2 class="title">Exploration</h2>
+          <p> During these times, Cookies(called biscuits in Britian), were a valuable food to have for thier long storage life and they were easy to store. Becoming a baker required years of being an apprentice, all the way to master baker, just to be able to make these.</p>
+          <span class="circle"></span>
+          <span class="date">1600s/1700s</span>
+
+        </li>
+         <li>
+          <h2 class="title">Anzac Biscuit events/creation</h2>
+          <p> These biscuits are from Scotland and came from Scottish Oat cakes. These would become prevelant in Australia and New Zealand when the Scootish migrated over.</p>
+          <p> These biscuits make an apperance in WWI with the Australian and New Zealand Army Corps(ANZACs)for thier long shelf life without refridgration. That is also how they got their name.</p>
+          <span class="circle"></span>
+          <span class="date">1815</span>
+          </li>
+          <li>
+          <h2 class="title">Oreos/Hydrox</h2>
+          <p> Oreos were created by Nabisco, being cream sandwitched between 2 chocolate wafers, called a sandwitch cookie. These are some of the most popular cookies with many varations</p>
+          <p> However, Oreos were not the original sandwitch cookies, the original sandwich cookies were called Hydrox, released in 1908 by Sunshine Biscuits. The name came from combining hydrogen and oxygen to imply water, but came off as hydrogen peroxide, equaling a terrible naming and a trademark lawsuit due to hydrox being used as a term for coolers,sodas, and ice cream brands. These were ultimally beaten out by Oreos and sell way less than them for a centry at this point despite multiple comeback attempts.</p>
+          <span class="circle"></span>
+          <span class="date">1908/1912</span>
+          </li>
+          <li>
+          <h2 class="title">Chocolate Cookie events/creation</h2>
+          <p> These were created by Ruth Graves Wakefield in Massachusetts due to her missing an ingrident and chopping a bar of chocolate into the dough, holding thier shape. Back then they were called Toll House Crunch Cookies.</p>
+          <p>These would soon be mass produced by Nestle in 1939 and have legal rights to the Toll House trademark the next year, only to lose it in 1983, making Toll house a descriptive term for cookies.</p>
+          <p> Chocolate chip cookies became the offical cookie of Massachusetts in 1997 in honor of Ruth under thier general laws. Pennsylvania had bills to make the chocolate chip cookie its offical state cookie but never got them passed.</p>  
+          <span class="circle"></span>
+          <span class="date">1937-2003</span>
+          </li>
+
+      </ul>
+
+    </div>
+</div>
+<button onclick="document.location='Cookie Quiz.html'" style="margin-left:40%;height:250px;width:350px;background-color:rgb(255, 87, 20) ;">Take the Quiz</button>
+</body>
+</html>
