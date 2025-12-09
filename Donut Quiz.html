@@ -5,7 +5,7 @@
   <tr>
   
     <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='index.html'" style=background-color:transparent>HOME</button></th>
-    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Cookie Menu Page.html'" style=background-color:transparent>MENU</button></th>
+    <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Donut Menu Page.html'" style=background-color:transparent>MENU</button></th>
     <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Sources.html'" style=background-color:transparent>SOURCES</button></th>
     <th style=border-style:solid;border-width:2px;border-color:black><button onclick="document.location='Quiz Screen.html'" style=background-color:transparent>Quizzes</button></th>
 
@@ -39,37 +39,37 @@
 <div style="margin-left:40%; margin-top:5%; font-size:24px;">    
 <h1 style="margin-top:0px;">Donut Quiz</h1>
 
-<p> Question 1- Where were Cookies first thought of? </p>
-<input type="radio" name="question 1" id ="wrong">Britian<br>
-<input type="radio" name="question 1" id="correct"> Persia<br>
-<input type="radio" name="question 1" id ="wrong"> USA<br>
-<input type="radio" name="question 1" id ="wrong"> Rome<br>
+<p> Question 1- What got added to donuts by Rome</p>
+<input type="radio" name="question 1" id ="wrong">Jelly<br>
+<input type="radio" name="question 1" id="wrong"> Glaze<br>
+<input type="radio" name="question 1" id ="wrong"> Sugar<br>
+<input type="radio" name="question 1" id ="correct"> Honey<br>
 <p id ="feedback"></p>
 
-<p> Question 2- Who made the first American published cook book? </p>
-<input type="radio" name="question 2"> Thomas Dawson<br>
-<input type="radio" name="question 2" > Nabisco <br>
-<input type="radio" name="question 2" > Ruth Graves Wakefield <br>
-<input type="radio" name="question 2" id ="correct 2"> Amelia Simmons<br>
+<p> Question 2- Who made De Agri Cultura </p>
+<input type="radio" name="question 2"> Vernon Rudolph<br>
+<input type="radio" name="question 2" > Donut lassies<br>
+<input type="radio" name="question 2" > Hanson Gregory <br>
+<input type="radio" name="question 2" id ="correct 2"> Cato the Elder<br>
 <p id="feedback2"></p>
-<p> Question 3 - Who made the first sandwich cookies </p>
-<input type="radio" name="question 3" id ="correct 3">Britian<br>
-<input type="radio" name="question 3" > Persia<br>
-<input type="radio" name="question 3" > USA<br>
-<input type="radio" name="question 3"> Rome<br>
+<p> Question 3 - When is national donut day </p>
+<input type="radio" name="question 3" >April 7th<br>
+<input type="radio" name="question 3" id="correct 3" > June 7th<br>
+<input type="radio" name="question 3" > August 21<br>
+<input type="radio" name="question 3" > November 3<br>
 <p id="feedback3"></p>
 
-<p> Question 4 - Which 2 countries named the Anzac Biscuit </p>
-<input type="checkbox" name="question 4" id="wrong"> New Wales<br>
-<input type="checkbox" name="question 4" id ="correct 4"> New Zealand<br>
-<input type="checkbox" name="question 4" id="wrong"> Scotland <br>
-<input type="checkbox" name="question 4" id ="correct 5"> Australia<br>
-<input type="checkbox" name="question 4" id="wrong"> America<br>
+<p> Question 4 - What were the people who delivered donuts to the troops during WW1 and WW2 called? </p>
+<input type="checkbox" name="question 4" id="correct 4"> Doughboys<br>
+<input type="checkbox" name="question 4" id ="wrong"> The Red Cross<br>
+<input type="checkbox" name="question 4" id="wrong"> Baker Army <br>
+<input type="checkbox" name="question 4" id ="wrong"> French People<br>
+<input type="checkbox" name="question 4" id="correct 5"> Donut Lassies<br>
 <p id="feedback4"></p>
 <p id="feedback5"></p>
 
 
-<p>Question 5- What was the name of the cookery that Gervase Markham made?</p>
+<p>Question 5- What was Dunkin' Donuts original name?</p>
 <input type="text" name="question 5" id="correct 6">
 <p id="feedback6"></p>
 </span>
@@ -83,7 +83,7 @@ function QuizResults(){
 
     var score=0
     const userAnswer=document.getElementById("correct 6").value
-    const correctAnswer="The English Hus-wife";
+    const correctAnswer="Open Kettle";
     if(document.getElementById('correct').checked)
 {
     score++;
@@ -140,7 +140,7 @@ if (userAnswer === correctAnswer) {
             document.getElementById("feedback6").innerHTML="Wrong"
             feedback6.style.color="red"
         }
-        alert("you got "+ score +" out of 6| "+"Answers|1: Persia|2: Amelia Simmons|3:Britian|4 and 5: New Zealand and Australia|6: The English Hus-wife ")
+        alert("you got "+ score +" out of 6| "+"Answers|1: Honey|2: Cato the Elder|3: June 7th|4 and 5: Doughboys and Donut Lassies|6: Open Kettle ")
 }
 
 
